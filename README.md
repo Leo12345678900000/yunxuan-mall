@@ -83,10 +83,6 @@ src/
 
 推送或向 `main` / `master` 提 PR 时，工作流会依次执行：`npm ci` → `npm run lint` → `npm run format:check` → `npm test` → `npm run build`。配置见 [.github/workflows/ci.yml](.github/workflows/ci.yml)。
 
-## 演示与截图（可选）
-
-若有线上 Demo 或部署在 GitHub Pages / Vercel 等，可在此补充链接；在 README 中插入 1～2 张关键页面截图能方便面试官快速了解界面与完成度。
-
 ## 更多参考
 
 - [Vite 配置](https://vitejs.dev/config/)
