@@ -1,0 +1,49 @@
+@use '@/styles/var.scss' as *;
+
+/* 必须挂在 .home-new 下，避免 .goods-list 污染首页其它区块（如人气推荐、分类商品栅格） */
+.home-new .goods-list {
+  display: flex;
+  justify-content: space-between;
+  height: 406px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    width: 306px;
+    height: 406px;
+    background: #eff6ff;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translate3d(0, -3px, 0);
+      box-shadow: 0 3px 8px rgb(0 0 0 / 20%);
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    img {
+      width: 306px;
+      height: 306px;
+      object-fit: cover;
+      display: block;
+    }
+
+    p {
+      font-size: 22px;
+      padding-top: 12px;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    .price {
+      color: $priceColor;
+    }
+  }
+}

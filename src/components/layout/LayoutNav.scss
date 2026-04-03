@@ -1,0 +1,37 @@
+@use '@/styles/var.scss' as *;
+
+.app-topnav {
+  background: #333;
+
+  ul {
+    display: flex;
+    height: 53px;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      a {
+        padding: 0 15px;
+        color: #cdcdcd;
+        line-height: 1;
+        display: inline-block;
+
+        i {
+          font-size: 14px;
+          margin-right: 2px;
+        }
+
+        &:hover {
+          color: $xtxColor;
+        }
+      }
+
+      ~ li a {
+        border-left: 2px solid #666;
+      }
+    }
+  }
+}
